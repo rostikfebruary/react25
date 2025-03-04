@@ -1,0 +1,8 @@
+.Post {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /*gap: 1vh;*/
+    margin-bottom: 5vh;
+}
