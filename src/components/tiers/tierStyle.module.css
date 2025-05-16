@@ -1,0 +1,87 @@
+.tierStyle{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+}
+
+.tierBrand,.tierSeason,.tierRadius,.tierStock,.tierPrice{
+    border: none;
+    border-radius: 10px;
+    height: 5vh;
+    width: 15vw;
+    background-color: antiquewhite;
+    text-align: center;
+    outline: none;
+    transition: 1s;
+}
+
+
+.tierBrand:hover,.tierSeason:hover,.tierRadius:hover,.tierStock:hover,.tierPrice:hover{
+    border:none;
+    border-radius: 10px;
+    height: 5vh;
+    width: 15vw;
+    background-color: #09dbe3;
+    transition: 1s;
+}
+
+.tierBtn{
+    width: 5vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    background-color: antiquewhite;
+    transition: 1s;
+}
+
+.tierBtn:hover{
+    background-color: rgba(253, 69, 69, 0.66);
+    transition: 1s;
+}
+
+.tierBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #e0e45a;
+    width: 20vw;
+    height: 38vh;
+    margin: 5vh auto;
+    border-radius: 10px;
+}
+
+.tierUpdate{
+    margin: 3vh auto;
+    border-radius: 5px;
+    border: none;
+    width: 8vw;
+    height: 4vh;
+    transition: 1s;
+    background-color: antiquewhite;
+}
+.tierDelete{
+    border-radius: 5px;
+    width: 8vw;
+    height: 4vh;
+    border: none;
+    transition: 1s;
+    background-color: antiquewhite;
+}
+
+.tierUpdate:hover, .tierDelete:hover{
+    background-color: #f6c183;
+    transition: 1s;
+}
+
+.tierRadius::-webkit-outer-spin-button,
+.tierRadius::-webkit-inner-spin-button,
+.tierStock::-webkit-outer-spin-button,
+.tierStock::-webkit-inner-spin-button,
+.tierPrice::-webkit-outer-spin-button,
+.tierPrice::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
