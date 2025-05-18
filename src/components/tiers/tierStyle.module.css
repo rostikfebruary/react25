@@ -47,10 +47,11 @@
     justify-content: center;
     flex-direction: column;
     border: 1px solid #e0e45a;
-    width: 20vw;
-    height: 38vh;
+    width: 27vw;
+    height: 50vh;
     margin: 5vh auto;
     border-radius: 10px;
+    background-color: #f3ffcd;
 }
 
 .tierUpdate{
@@ -60,7 +61,8 @@
     width: 8vw;
     height: 4vh;
     transition: 1s;
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
+    background-color: #daf17c;
 }
 .tierDelete{
     border-radius: 5px;
@@ -68,7 +70,8 @@
     height: 4vh;
     border: none;
     transition: 1s;
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
+    background-color: #daf17c;
 }
 
 .tierUpdate:hover, .tierDelete:hover{
@@ -81,7 +84,9 @@
 .tierStock::-webkit-outer-spin-button,
 .tierStock::-webkit-inner-spin-button,
 .tierPrice::-webkit-outer-spin-button,
-.tierPrice::-webkit-inner-spin-button {
+.tierPrice::-webkit-inner-spin-button,
+.tierBrand::-webkit-outer-spin-button,
+.tierBrand::-webkit-inner-spin-button{
     -webkit-appearance: none;
     margin: 0;
 }

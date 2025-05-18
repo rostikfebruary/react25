@@ -28,7 +28,7 @@
 
 .orderBtn{
     width: 5vw;
-    height: 5vh;
+    height: 10vh;
     border-radius: 10px;
     border: none;
     background-color: antiquewhite;
@@ -41,13 +41,14 @@
 }
 
 .orderBlock{
+    background-color: #f3ffcd;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border: 1px solid #e0e45a;
-    width: 20vw;
-    height: 38vh;
+    width: 27vw;
+    height: 50vh;
     margin: 5vh auto;
     border-radius: 10px;
 }
@@ -59,7 +60,8 @@
     width: 8vw;
     height: 4vh;
     transition: 1s;
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
+    background-color: #daf17c;
 }
 
 .orderDelete{
@@ -68,7 +70,8 @@
     height: 4vh;
     border: none;
     transition: 1s;
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
+    background-color: #daf17c;
 }
 
 .orderUpdate:hover, .orderDelete:hover{

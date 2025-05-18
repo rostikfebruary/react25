@@ -16,8 +16,8 @@ const Customer = ({customer, changeTrigger, setCustomerForUpdate}) => {
             <div>name: {name}</div>
             <div>email: {email}</div>
             <div>phone: {phone}</div>
-            <button className={css.customerUpdate} onClick={() => setCustomerForUpdate(customer)}>Update data</button>
-            <button className={css.customerDelete} onClick={deleteCustomer}>Delete Customer</button>
+            <button className={css.customerUpdate} onClick={() => setCustomerForUpdate(customer)}>Update</button>
+            <button className={css.customerDelete} onClick={deleteCustomer}>Delete</button>
         </div>
     );
 };

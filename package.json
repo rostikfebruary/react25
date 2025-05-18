@@ -13,7 +13,9 @@
     "web-vitals": "^2.1.4",
     "axios": "^1.9.0",
     "react-router-dom": "^7.6.0",
-    "react-hook-form": "^7.56.3"
+    "react-hook-form": "^7.56.3",
+    "@hookform/resolvers": "^5.0.1",
+    "joi": "^17.13.3"
 
   },
   "scripts": {

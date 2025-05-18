@@ -15,7 +15,7 @@ const Order = ({order, changeTrigger, setOrderForUpdate}) => {
             <div>status: {status}</div>
             <div>total: {total}</div>
             <div>order_date: {order_date}</div>
-            <button className={css.orderUpdate} onClick={() => setOrderForUpdate(order)}>Update data</button>
+            <button className={css.orderUpdate} onClick={() => setOrderForUpdate(order)}>Update</button>
             <button className={css.orderDelete} onClick={deleteOrder}>Delete</button>
         </div>
     );

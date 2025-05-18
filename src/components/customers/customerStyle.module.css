@@ -43,14 +43,14 @@
 
 
 .customerBlock{
-    /*background-color: #f1d6a0;*/
+    background-color: #f3ffcd;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border: 1px solid #e0e45a;
-    width: 20vw;
-    height: 35vh;
+    width: 27vw;
+    height: 50vh;
     margin: 5vh auto;
     border-radius: 10px;
 }
@@ -62,7 +62,8 @@
     width: 8vw;
     height: 4vh;
     transition: 1s;
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
+    background-color: #daf17c;
 }
 
 .customerDelete{
@@ -71,7 +72,8 @@
     height: 4vh;
     border: none;
     transition: 1s;
-    background-color: antiquewhite;
+    /*background-color: antiquewhite;*/
+    background-color: #daf17c;
 }
 
 .customerUpdate:hover, .customerDelete:hover{

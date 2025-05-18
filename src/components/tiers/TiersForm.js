@@ -2,9 +2,14 @@ import {useForm} from "react-hook-form";
 import {tierService} from "../../Services/tierService";
 import {useEffect} from "react";
 import css from "./tierStyle.module.css"
+import {joiResolver} from "@hookform/resolvers/joi";
+import {tierValidator} from "../../validators/tierValidator";
 
 const TiersForm = ({setTiers, tierForUpdate, setTierForUpdate}) => {
-    const {reset, setValue, register, handleSubmit, formState:{isValid}} = useForm()
+    const {reset, setValue, register, handleSubmit, formState:{isValid, errors}} = useForm({
+        mode:'all',
+        resolver: joiResolver(tierValidator)
+    })
 
 
     useEffect(() => {
@@ -31,11 +36,16 @@ const TiersForm = ({setTiers, tierForUpdate, setTierForUpdate}) => {
 
     return (
         <form className={css.tierStyle} onSubmit={handleSubmit(tierForUpdate ? update : save)}>
-            <input className={css.tierBrand} type="text" placeholder={'Brand'} {...register('brand')}/>
+            <input className={css.tierBrand} type="number" placeholder={'Brand'} {...register('brand')}/>
+            {errors.brand && <div>{errors.brand.message}</div>}
             <input className={css.tierSeason} type="text" placeholder={'Season'} {...register('season')}/>
+            {errors.season && <div>{errors.season.message}</div>}
             <input className={css.tierRadius} type="number" placeholder={'Radius'} {...register('radius')}/>
+            {errors.radius && <div>{errors.radius.message}</div>}
             <input className={css.tierStock} type="number" placeholder={'Stock'} {...register('stock')}/>
+            {errors.stock && <div>{errors.stock.message}</div>}
             <input className={css.tierPrice} type="number" placeholder={'Price'} {...register('price')}/>
+            {errors.price && <div>{errors.price.message}</div>}
             <button className={css.tierBtn} disabled={!isValid}>{tierForUpdate ? 'Update' : 'Create'}</button>
         </form>
     );
