@@ -1,7 +1,13 @@
+import {A} from "./components/A";
+import {B} from "./components/B";
+
+
 const App = () => {
     return (
         <div>
-            I back
+            <A/>
+                <B/>
+
         </div>
     );
 };
